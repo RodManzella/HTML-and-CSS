@@ -62,3 +62,9 @@ li{
     font-size: 18px;
     font-weight: bold;
 }
+
+.related{
+    list-style: none;
+}
+
+/* Geralmente não usamos ID´S */
