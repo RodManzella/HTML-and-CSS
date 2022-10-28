@@ -39,6 +39,10 @@ li{
     font-size:16px ;
 }
 
-footer p{  /*Descendant selector: will select all elements p(child element) inside a footer(parennt element) */
+footer p{  /*Descendante selector: will select all p elements inside a footer*/
+    font-size:16px;
+}
 
+article header p{  /*Descendant selector: will select all p elements inside a header that are inside a footer */
+    font-size: 16px;
 }
