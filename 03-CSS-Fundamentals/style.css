@@ -49,11 +49,16 @@ li{
 
 
 /* We can only use each ID once, and we can use classes more than one time*/
-#author{
+#author{  /*ID (#)*/
     font-style: italic;
     font-size: 18px;
 }
 
 #copyright{
     font-size: 16px;
+}
+
+.related-author{  
+    font-size: 18px;
+    font-weight: bold;
 }
