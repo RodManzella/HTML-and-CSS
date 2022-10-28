@@ -39,10 +39,21 @@ li{
     font-size:16px ;
 }
 
-footer p{  /*Descendante selector: will select all p elements inside a footer*/
+/*footer p{  Descendant selector: will select all p elements inside a footer
     font-size:16px;
+} */
+
+/*article header p{  Descendant selector: will select all p elements inside a header that are inside a footer 
+    font-size: 16px;
+} */
+
+
+/* We can only use each ID once, and we can use classes more than one time*/
+#author{
+    font-style: italic;
+    font-size: 18px;
 }
 
-article header p{  /*Descendant selector: will select all p elements inside a header that are inside a footer */
+#copyright{
     font-size: 16px;
 }
