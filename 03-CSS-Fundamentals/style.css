@@ -90,7 +90,7 @@ aside{
     }                         */
 
 
-/*Pseudo-Classes*/
+/*Pseudo-Classes: perfect for situations where all child elements are the same*/
 
 li:first-child{           /*Select all li elements that are the first child element.*/
     font-weight: bold;
@@ -98,4 +98,14 @@ li:first-child{           /*Select all li elements that are the first child elem
 
 li:last-child{  /*Select all li elements that are the last child element*/
     font-style: italic;
+}
+
+/*li:nth-child(2){  /*Select all li elements that are in second and are child elements
+    color: red;
+}  */
+
+
+/*A imagem da autora está dentro do primeiro P, logo, n acontece nada*/
+article p:first-child{
+    color: red;
 }
