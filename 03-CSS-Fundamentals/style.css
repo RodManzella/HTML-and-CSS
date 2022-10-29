@@ -85,3 +85,13 @@ aside{
     border-bottom: 5px solid #1098ad;
 }
 
+/* .first-li{
+        font-weight-bold
+    }                         */
+
+
+/*Pseudo-Classes*/
+
+li:first-child{           /*Select all li elements that are the first child element.*/
+    font-weight: bold;
+}
