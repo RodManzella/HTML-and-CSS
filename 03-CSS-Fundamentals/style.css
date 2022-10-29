@@ -109,3 +109,19 @@ li:last-child{  /*Select all li elements that are the last child element*/
 article p:first-child{
     color: red;
 }
+
+/*Styling links*/
+a:link{  /*targets anchor elements that have href attribute*/
+    color:#1098ad ;
+    text-decoration: none;
+}
+
+a:visited{  /*applying style when a link has already been visited*/
+    /* color: #777; */
+    color: #1098ad;
+}
+
+a:hover{  /*applying style when the link is being hovered by mouse  */
+    color: orangered;
+    font-weight: bold;
+}
