@@ -95,3 +95,7 @@ aside{
 li:first-child{           /*Select all li elements that are the first child element.*/
     font-weight: bold;
 }
+
+li:last-child{  /*Select all li elements that are the last child element*/
+    font-style: italic;
+}
