@@ -130,4 +130,7 @@ Final element height = top border + top padding + height + bottom padding + bott
 . This is the default behavior, but we can change it
 
 
+- Collapsing margins: when we have two margins occuping the same space, only the larger is visible to the page.
+
+
 
