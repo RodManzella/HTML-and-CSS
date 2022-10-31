@@ -41,6 +41,18 @@ body{
 
 }
 
+nav{
+    font-size: 18px;
+}
+
+article{
+    margin-bottom: 60px;
+}
+
+.post-header{
+    margin-bottom: 40px;
+}
+
 aside{
     background-color: #f7f7f7;
     border-top: 5px solid #1098ad;
@@ -70,6 +82,8 @@ h2{
 
 h3{
     font-size: 30px;
+    margin-bottom: 20px;
+
 }
 
 h4{
@@ -81,6 +95,11 @@ h4{
 p{
     font-size: 22px;
     line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+ul,ol{
+    margin-left: 50px;  /*To show bulletpoints(they had no space)*/
 }
 
 li{
