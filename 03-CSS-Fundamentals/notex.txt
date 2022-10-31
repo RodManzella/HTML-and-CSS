@@ -132,5 +132,37 @@ Final element height = top border + top padding + height + bottom padding + bott
 
 - Collapsing margins: when we have two margins occuping the same space, only the larger is visible to the page.
 
+====================================================================================================================
+
+CSS Theory #4 Types of Boxes: 
+
+. Block-Level elements:
+
+- Elements are formatted visually as blocks
+
+- Elements occupy 100% of parent element´s width, no matter the content
+
+- Elements are stacked vertically by default, one after another
+
+- the box-model applies as showed earlier
+
+Default elements: body, main, header, footer, section, nav, aside, div, h1-h6, p, ul, ol, li, etc.
+
+with CSS: display: block
+
+-----------------------------------------------------------------------------------------------------------------------
+
+.Inline elements
+
+- Occupies only the space necessary for its content
+
+- Causes no line-breaks after or before the element
+
+- Box model applies in a different way: heights and widths do not apply
+
+- Paddings and margins are applied only horizontally(left and right)
+
+
+
 
 
