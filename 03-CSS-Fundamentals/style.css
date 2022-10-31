@@ -8,15 +8,19 @@ li{
     font-family: sans-serif;  
     color: #444;
 }
-*/
 
-/*Universal selector:
 
-*{
+/*Universal selector: */
 
+*{                                        /*This is extremely common, usually the first thing to do.*/
+    margin: 0;
+    padding: 0;
 }
 
-*/
+
+
+/*Having all the default spaces makes it harder for us to style our page, so, what we want to do is a 
+global reset, and basically set all margins and paddings to 0*/
 
 
 body{
@@ -33,6 +37,7 @@ body{
     padding-left: 40px;
     padding-right: 40px; */
     padding: 20px 40px;  /*TOP and BOTTOM*/
+    margin-bottom: 60px;        /*It is very common to use mostly space at the bottom to create vertical space*/
 
 }
 
@@ -40,6 +45,9 @@ aside{
     background-color: #f7f7f7;
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
+    /*padding-top: 50px;
+    padding-bottom: 50px; */
+    padding: 50px 0;  /* Top and Bottom 50px, left and right 0px*/
 }
 
 h1,
@@ -57,6 +65,7 @@ h1{
 
 h2{
     font-size: 40px;
+    margin-bottom: 30px;
 }
 
 h3{
