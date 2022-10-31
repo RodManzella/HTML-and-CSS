@@ -222,5 +222,5 @@ a:active{  /*applying style to link of the moment we click*/
 }
 
 nav a:link:last-child{
-    margin-right: 0;                   /*setando margin right do último elemento child anchor de nav para 0*/
+    margin-right: 0;                   /*setando margin right do último elemento child anchor de nav para 0(chaining two pseudo-classes)*/
 }
