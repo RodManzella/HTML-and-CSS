@@ -9,9 +9,11 @@ What happens when there are multiple CSS rules that apply to the same elements
 - But there are conflicting font-size declarations! is it 18px, 20px, or 22px
 
 -When the are multiple the samedeclarations for the exact same element, then what matters are the selectors
+            5)Declarations marked !important
 
+            4)Inline style(style atrribute in HTML)
 
-             3) ID(#)selector     multiple   -------------->  Last selector in code applies
+            3) ID(#)selector     multiple   -------------->  Last selector in code applies
                 
             2) Class(.) or pseudo-class(:) selector     multiple   -------------->  Last selector in code applies
 
@@ -20,3 +22,24 @@ What happens when there are multiple CSS rules that apply to the same elements
             0) Universal selector(*)
           
 
+
+
+.author{
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+#author-text{
+    font-size: 20px;
+}
+
+p,
+li{
+    font-family: sans-serif;
+    color: #444444;
+    font-size: 22px;
+}
+
+
+-There is an ID selector(#author-text), so for the conflicting font-size property, this is the selector that applies
