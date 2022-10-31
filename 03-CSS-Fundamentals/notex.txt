@@ -186,5 +186,9 @@ display: inline-block
 
 
 
+- images are actually inline-block elements
+
+
+
 
 
