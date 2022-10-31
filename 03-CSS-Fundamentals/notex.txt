@@ -102,3 +102,32 @@ h1{
 
 - now the color and font-size properties overwrite the inherited styles from the parent element(text-transform is added)
 
+===========================================================================================================================
+CSS Theory #3 The box model:
+
+-The box model defines how elements are displayed on  a webpage and how they are sized
+
+- In this box model each and every element on a webpage can be seen as a rectangular box, and each of these boxes can have
+content, a border, space inside and outside of it
+
+Content: width and height (inside of an element)
+
+Border: A line around the element, still inside of the element
+
+padding: Invisible space around the content, inside of the element(space between content and border)
+
+margin: space outside of the element, between elements
+
+Fill area: Area that gets filled with background clor or background image(everything inside border)
+
+
+
+Final element width = left border + left padding + width + right padding + right border
+
+Final element height = top border + top padding + height + bottom padding + bottom border
+
+. we can specify all these values using CSS properties
+. This is the default behavior, but we can change it
+
+
+
