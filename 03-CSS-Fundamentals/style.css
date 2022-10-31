@@ -38,6 +38,7 @@ body{
     padding-right: 40px; */
     padding: 20px 40px;  /*TOP and BOTTOM*/
     margin-bottom: 60px;        /*It is very common to use mostly space at the bottom to create vertical space*/
+    height: 80px;
 
 }
 
@@ -190,4 +191,9 @@ a:hover{  /*applying style when the link is being hovered by mouse  */
 a:active{  /*applying style to link of the moment we click*/
     background-color: black;
     font-style: italic;
+}
+
+.post-img{
+    width: 100%;
+    height: auto;   /*the auto propertie maintains original ratio of the element*/
 }
