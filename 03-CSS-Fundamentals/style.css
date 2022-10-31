@@ -219,4 +219,8 @@ a:active{  /*applying style to link of the moment we click*/
     margin-top: 15px;
     display: inline-block;
     /*Como agora o elemento é inline-block, margin-top funciona(mesma funcionalidade do elemento do tipo bloco, mas sem ocupar espaço desnecessário)*/
-} 
+}
+
+nav a:link:last-child{
+    margin-right: 0;                   /*setando margin right do último elemento child anchor de nav para 0*/
+}
