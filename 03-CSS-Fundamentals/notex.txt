@@ -58,3 +58,36 @@ CSS Theory #2: Inheritance and the Universal Selector
 
 - We use the strategy of putting text properties in the body selector, and then we can overwrite the way we want
 
+
+
+HOW INHERITANCE WORKS:
+
+    <body>                                                          
+        <nav>
+            This is the navigation
+        </nav>
+
+        <h1> My website </h1>
+
+        <p>
+            The text in this paragraph
+            is completely irrelevant
+        </p>
+
+    </body>
+
+
+body{
+    color: #444;
+    font-family: sans-serif;
+    font-size: 16px;
+
+    border-top: 10px solid #1098ad;            The border property does not get inherited(impractical)
+}
+
+
+elements nav, h1 and p inherit color, font-family and font-size properties
+
+-Not all properties get inherited. It´s mostly ones related to text: font-family, font-size, font-weightt, font-style,
+color, line-height, letter-spacing, text-align, text-transform, text-shadow, list-style, etc.
+
