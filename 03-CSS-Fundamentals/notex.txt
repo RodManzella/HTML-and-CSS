@@ -43,3 +43,18 @@ li{
 
 
 -There is an ID selector(#author-text), so for the conflicting font-size property, this is the selector that applies
+
+===========================================================================================================================
+
+CSS Theory #2: Inheritance and the Universal Selector
+
+-Inheritance is a mechanism by which some styles get their values inherited from parent elements to child elements
+
+- Not all properties get inherited, it is mostly the ones about text
+
+- Inherited styles are easily overwriten whenever there is any rule that applies for the same property
+
+- inherited values are the ones that have the lowest priority
+
+- We use the strategy of putting text properties in the body selector, and then we can overwrite the way we want
+
