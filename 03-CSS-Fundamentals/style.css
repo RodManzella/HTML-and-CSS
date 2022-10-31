@@ -33,8 +33,9 @@ body{
 
 .container{
     width: 800px;
-    margin-left: auto;      /*Centering page*/
-    margin-right: auto;
+    /*margin-left: auto;      Centering page
+    margin-right: auto;                        */
+    margin: 0 auto;  /*doing the same thing: top and bottom = 0  | left and right auto*/
 }
 
 .main-header{
