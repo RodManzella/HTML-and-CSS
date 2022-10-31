@@ -152,7 +152,7 @@ With CSS: display: block
 
 -----------------------------------------------------------------------------------------------------------------------
 
-.Inline elements
+.Inline elements:
 
 - Occupies only the space necessary for its content
 
@@ -165,6 +165,24 @@ With CSS: display: block
 Default elements: a, img, strong, em, button, etc.
 
 With CSS: display:inline
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+.Inline-Block elements:
+
+-Looks like inline from the outside , behaves like block-level on the inside 
+
+- Occupies only content´s space
+
+- Causes no line-breaks
+
+- Box-model applies as showed: 
+
+. box model behaves like block level boxes: we can still set heights and width, and we can still use margins an paddings like
+block-level elements
+
+display: inline-block
 
 
 

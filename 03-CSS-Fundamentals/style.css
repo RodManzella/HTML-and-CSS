@@ -23,6 +23,7 @@ li{
 global reset, and basically set all margins and paddings to 0*/
 
 
+/* PAGE SECTIONS */
 body{
     color: #444;
     font-family: sans-serif;
@@ -45,7 +46,7 @@ body{
     padding-right: 40px; */
     padding: 20px 40px;  /*TOP and BOTTOM*/
     margin-bottom: 60px;        /*It is very common to use mostly space at the bottom to create vertical space*/
-    height: 80px;
+    /* height: 80px; */
 
 }
 
@@ -70,6 +71,9 @@ aside{
     padding: 50px 0;  /* Top and Bottom 50px, left and right 0px*/
     width: 500px;
 }
+
+/* SMALLER ELEMENTS */
+
 
 h1,
 h2,
@@ -114,6 +118,7 @@ ul,ol{
 li{
     font-size:16px ;
     margin-bottom: 10px;
+    /* display: inline; */
 }
 
 li:last-child{
@@ -204,3 +209,14 @@ a:active{  /*applying style to link of the moment we click*/
     width: 100%;
     height: auto;   /*the auto propertie maintains original ratio of the element*/
 }
+
+ nav a:link{
+    /*background-color: orangered;
+    margin: 20px;
+    padding: 20px;
+    display:block;                     Como a altura do header estava fixada em 80px, os links(que viraram elementos tipo bloco) invadiram outro elemento. */
+    margin-right: 30px;
+    margin-top: 15px;
+    display: inline-block;
+    /*Como agora o elemento é inline-block, margin-top funciona(mesma funcionalidade do elemento do tipo bloco, mas sem ocupar espaço desnecessário)*/
+} 
