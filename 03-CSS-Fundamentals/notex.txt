@@ -1,0 +1,22 @@
+CSS Theory #1: Conflicts Between Selectors
+
+What happens when there are multiple CSS rules that apply to the same elements
+
+-There are multiple selectors selecting the same element. which one of them applies
+
+- All of them. All rules and properties are applied
+
+- But there are conflicting font-size declarations! is it 18px, 20px, or 22px
+
+-When the are multiple the samedeclarations for the exact same element, then what matters are the selectors
+
+
+             3) ID(#)selector     multiple   -------------->  Last selector in code applies
+                
+            2) Class(.) or pseudo-class(:) selector     multiple   -------------->  Last selector in code applies
+
+            1)Element Selector(p, div, li, etc.)    multiple   -------------->  Last selector in code applies
+
+            0) Universal selector(*)
+          
+
