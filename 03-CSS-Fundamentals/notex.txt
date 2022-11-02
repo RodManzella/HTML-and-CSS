@@ -192,6 +192,28 @@ display: inline-block
 
 CSS Theory #5: Absolute Positioning
 
+Normal Flow:
+
+- Default Positioning
+
+- Element is "in flow"
+
+- Elements are simply laid out according to their order int he html code
+
+- position: relative
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Absolute Positioning:
+
+- Element is removed from normal flow: "out of flow"
+
+- No impact on surrounding elements, might overlap them
+
+- We can use top, bottom, left or right to offset the element from it´s relatively positioned container
+
+- position: absolute
+
 
 
 
