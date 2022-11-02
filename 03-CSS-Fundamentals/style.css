@@ -232,7 +232,7 @@ button{
     padding: 20px;
     cursor: pointer;
     position: absolute;  /*O elemento button com position absolute terá sua posição top, bottom, left e right de acordo com o elemento pai(position relative)*/
-    /*Nesse caso queremos em relação ao body*/
+    /*Nesse caso queremos em relação ao container*/
     bottom: 50px;
     right: 50px;
 }
