@@ -224,3 +224,10 @@ a:active{  /*applying style to link of the moment we click*/
 nav a:link:last-child{
     margin-right: 0;                   /*setando margin right do último elemento child anchor de nav para 0(chaining two pseudo-classes)*/
 }
+
+button{
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+    position: absolute;
+}
