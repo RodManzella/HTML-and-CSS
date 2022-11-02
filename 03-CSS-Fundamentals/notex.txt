@@ -228,7 +228,12 @@ example:
     background-color: #f4b33f
 }
 
--the element with class (. el) will be located exactly 100 pixels from the top and 200 pixels from the left of it´s relatively positioned container element
+- the element with class (. el) will be located exactly 100 pixels from the top and 200 pixels from the left of it´s relatively positioned container element
+
+- don´t use this to build complex layouts
+
+- Instead, we use absolute positioning for single elements like the button and other small things.
+
 
 
 
