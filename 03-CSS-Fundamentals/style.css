@@ -38,7 +38,7 @@ body{
     /*margin-left: auto;      Centering page
     margin-right: auto;                        */
     margin: 0 auto;  /*doing the same thing: top and bottom = 0  | left and right auto*/
-    position: relative;
+    
 }
 
 .main-header{
@@ -232,7 +232,7 @@ button{
     padding: 20px;
     cursor: pointer;
     position: absolute;  /*O elemento button com position absolute terá sua posição top, bottom, left e right de acordo com o elemento pai(position relative)*/
-    /*Nesse caso queremos em relação ao container*/
+    /*Nesse caso queremos em relação ao body*/
     bottom: 50px;
     right: 50px;
 }
