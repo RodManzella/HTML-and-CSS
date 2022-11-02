@@ -23,6 +23,15 @@ li{
 global reset, and basically set all margins and paddings to 0*/
 
 
+/*
+pseudo-elements are elements that don´t exist in the HTML but that we can still select and style in CSS
+
+some common examples of that are the first letter of a paragraph or the first line of a paragraph
+*/
+
+
+
+
 /* PAGE SECTIONS */
 body{
     color: #444;
@@ -236,3 +245,12 @@ button{
     bottom: 50px;
     right: 50px;
 }
+
+/*
+pseudo-elements are elements that don´t exist in the HTML but that we can still select and style in CSS
+
+some common examples of that are the first letter of a paragraph or the first line of a paragraph
+*/
+
+  /* Pseudo-elements are writen using two colons*/
+
