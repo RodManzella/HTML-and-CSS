@@ -272,3 +272,16 @@ h3 + p ::first-line{
 
 */
 
+
+/* the most used pseudo-elements are the after and before 
+
+-The after pseudo-element creates a pseudo-element that will automatically be the very first child of the selected element
+
+- It is very useful for some small cosmetic style for which we don´t necessarily add a new element to the html
+
+*/
+
+h1::after{
+    content: "TOP";
+}
+
