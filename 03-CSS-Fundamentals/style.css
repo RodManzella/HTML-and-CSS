@@ -280,6 +280,9 @@ h3 + p ::first-line{
 - It is very useful for some small cosmetic style for which we don´t necessarily add a new element to the html
 
 */
+h2{
+    position: relative;
+}
 
 h2::after{
     content: "TOP";
@@ -289,5 +292,9 @@ h2::after{
     /*By default, any pseudo element is an inline element, so, if we want to give it any padding, we want the box-model to
     apply to it normally. So in order to do that we need to render this element as an inline block box*/
     display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: -15px;
+    right: -25px;
 }
 
