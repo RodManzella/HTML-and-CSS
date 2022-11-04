@@ -254,4 +254,21 @@ some common examples of that are the first letter of a paragraph or the first li
 
   /* Pseudo-elements are writen using two colons*/
 
+h1::first-letter{
+    font-style: normal;
+    margin-right: 5px;
+}
+
+
+
+/* Adjacent sibling element: is the very next element of an element that is inside a parent container (there is a selector of that) */
+
+/*Let´s say i want to select all p elements that come after a h3
+
+
+h3 + p ::first-line{
+    color: red;
+}
+
+*/
 
