@@ -281,7 +281,7 @@ h3 + p ::first-line{
 
 */
 
-h1::after{
+h2::after{
     content: "TOP";
 }
 
