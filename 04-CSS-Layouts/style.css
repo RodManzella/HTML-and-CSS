@@ -325,13 +325,22 @@ We add a clearfix class to the parent element with collapsed height*/
 
 
 article{
+  background-color: green;
+  width: 900px;
+  float: left
+
+  /*We divided the width of both containers the sum be equal to the total width of the parent container
+  this way they can be side by side*/
+  
 
 }
 
 aside{
-
+  background-color: red;
+  width: 300px;
+  float: right;
 }
 
 footer{
-
+  background-color: yellow;
 }
