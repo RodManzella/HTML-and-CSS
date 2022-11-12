@@ -292,6 +292,8 @@ nav p {
 Pois é como se não estivessem mais na página(fix with clear)*/
 /*Só continua sendo visível por conta do padding*/
 
+/*Para limparmos o float, criar um elemento div com clear no container*/
+
 
 h1{
   float: left;
