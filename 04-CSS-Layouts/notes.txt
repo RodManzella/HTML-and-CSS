@@ -48,3 +48,7 @@ Floats:
 
 -The container element will not adjust its height to the floated element.
 Container element collapses height
+
+=========================================================================================
+Box-sizing: border-Box
+
