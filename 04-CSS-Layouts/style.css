@@ -54,6 +54,9 @@ aside {
   /*O que acontece é que ao adicionarmos padding left e right 40px, o comprimento do aside excede
   o limite do container pai, então, ele vai pra fora.*/
 
+  /*Width of aside: 300px
+  + 40px left + 40px right(excede total)*/
+
   /*Isso acontece devido ao comportamento padrão do box-model*/
   
 }

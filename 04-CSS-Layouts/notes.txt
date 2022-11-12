@@ -50,5 +50,24 @@ Floats:
 Container element collapses height
 
 =========================================================================================
-Box-sizing: border-Box
+
+Box-sizing: border-Box:
+
+------------------------------------------------------------------------------------------
+recap default box-model behaviour:
+
+
+Final element width: right border + right padding + width + left padding + left border
+
+Final element height: top border + top padding + height + bottom padding + bottom border
+
+- Whenever we specify a height or a width, then, the box model will add the border and the paddingg
+on top of that, and that is exactly what created this situation that we found ourselves in now on
+our page. The sidebar grew too big because of the padding  and so it no longer fit close to the
+article
+
+-
+
+
+
 
