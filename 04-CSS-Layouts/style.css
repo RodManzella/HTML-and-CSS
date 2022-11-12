@@ -287,3 +287,16 @@ nav p {
    margin-left: 20px;                        
 
 }
+
+/*O container header que tem (h1 e nav) terá sua altura colapsada ao flutuarmos seus dois child-elements.
+Pois é como se não estivessem mais na página(fix with clear)*/
+/*Só continua sendo visível por conta do padding*/
+
+
+h1{
+  float: left;
+}
+
+nav{
+  float: right;
+}
