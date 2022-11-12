@@ -265,3 +265,15 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/*FLOATS*/
+
+.author-img{
+  float: left; /*This image os going to be taken out of the document flow just like an
+                absolutely positioned element. Now the difference here with floats
+                is that all the other elements will basically float around it*/
+}
+
+.author{
+
+}
