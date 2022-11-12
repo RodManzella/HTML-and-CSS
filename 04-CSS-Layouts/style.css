@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -323,3 +323,15 @@ We add a clearfix class to the parent element with collapsed height*/
       display: block;
 }
 
+
+article{
+
+}
+
+aside{
+
+}
+
+footer{
+
+}
