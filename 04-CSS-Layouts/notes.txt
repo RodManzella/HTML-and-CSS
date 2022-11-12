@@ -25,3 +25,26 @@ Perfect for component layouts
 3) CSS grid
 
 - For laying out element ina fully-fledged 2-dimensional grid. Perfect for page layouts and complex components
+
+===================================================================================================
+Absolute Positioning VS floats
+
+Absolute Positioning:
+
+-Element is removed from the normal flow
+
+-No impact on surrounding, might overlap them
+
+- We use top, bottom, left or right to offset the element
+from its relatively positioned container
+
+-----------------------------------------------------------------------
+
+Floats:
+
+- Element is removed from the normal flow
+
+- Text and Inline elements will wrap around the floated element
+
+-The container element will not adjust its height to the floated element.
+Container element collapses height

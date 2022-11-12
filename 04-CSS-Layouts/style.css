@@ -269,11 +269,21 @@ nav p {
 /*FLOATS*/
 
 .author-img{
-  float: left; /*This image os going to be taken out of the document flow just like an
-                absolutely positioned element. Now the difference here with floats
-                is that all the other elements will basically float around it*/
+  /*This image os going to be taken out of the document flow just like an
+  absolutely positioned element. Now the difference here with floats
+  is that all the other elements will basically float around it*/
+  float: left;
+   margin-bottom: 20px;
+   /*A floated element is able to create margins around it*/           
 }
 
-.author{
+.author{ 
+  /*Na descrição do autor, devemos colocar padding o suficiente para que ela saia de trás
+  da imagem. Somente comprovando o fato que a imagem está fora do fluxo normal.Porém
+  se colocarmos a descrição em float, ela será posta logo quando a imagem acabar*/
+   /*padding-left: 80px;    */
+   margin-top: 10px;
+   float: left;
+   margin-left: 20px;                        
 
 }
