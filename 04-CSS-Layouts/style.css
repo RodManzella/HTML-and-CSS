@@ -325,7 +325,6 @@ We add a clearfix class to the parent element with collapsed height*/
 
 
 article{
-  background-color: green;
   width: 900px;
   float: left
 
@@ -336,14 +335,12 @@ article{
 }
 
 aside{
-  background-color: red;
   width: 300px;
   float: right;
   /*O footer vai acabar flutuando abaixo do aside, precisamos dar clear*/
 }
 
 footer{
-  background-color: yellow;
   /*In this situation we don´t need to create any new empty div, or we don´t
   need to use the clearfix class, because we already have that element
   on which we want to clear the float, which is exactly the footer*/
