@@ -339,8 +339,19 @@ aside{
   background-color: red;
   width: 300px;
   float: right;
+  /*O footer vai acabar flutuando abaixo do aside, precisamos dar clear*/
 }
 
 footer{
   background-color: yellow;
+  /*In this situation we don´t need to create any new empty div, or we don´t
+  need to use the clearfix class, because we already have that element
+  on which we want to clear the float, which is exactly the footer*/
+  clear: both;
 }
+
+/*Nessa situação em que os dois elementos filhos ocupam, juntos, o comprimento total do container pai
+não importa se usarmos float right ou float left, e a razão para isso é que não há espaço vazio entre eles.
+Mas criando espaço entre eles, diminuindo o comprimento do elemento article criará um espaço entre eles, já
+que um está flutuando para esquerda e o outro está flutuando para a direita. Caso eu coloque os dois 
+flutuando para esquerda o aside vai colar no article. */
