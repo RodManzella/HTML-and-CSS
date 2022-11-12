@@ -293,7 +293,7 @@ nav p {
 Pois é como se não estivessem mais na página(fix with clear)*/
 /*Só continua sendo visível por conta do padding*/
 
-/*Para limparmos o float, criar um elemento div com clear no container*/
+/*Para limparmos o float, criar um elemento div com clear no container(BAD PRACTICE)*/ 
 
 
 h1{
@@ -303,3 +303,24 @@ h1{
 nav{
   float: right;
 }
+
+.clear{
+  clear:both;
+}
+
+/*The clearfix hack is something that has been widely used by many years in the css community.
+And the reason for that is exactly to avoid having these empty divs
+
+We add a clearfix class to the parent element with collapsed height*/
+
+.clearfix::after{  
+  /*  - after creates a new element that is going to be the last child element of container
+      - It only appears if we define something with content property
+      - By default, pseudo elements like after and before are inline elements.
+        However, clearing floats like this only really works on a block level element, so
+        we set the display property to block*/
+      clear: both;
+      content: '';
+      display: block;
+}
+
