@@ -85,6 +85,69 @@ content area(the content area adapts to be the final size we defined initially)
 - Esse comportamento da border-box é bem mais intuitivo e menos confuso, por isso, vamos aplicar ele sempre
 em todos elementos utilizando o seletor universal.
 
+====================================================================================================================
+A FLEXBOX OVERVIEW:
+
+- Flexbox is a set of related CSS properties for building 1-dimensional layouts
+
+- The main idea behind flexbox is that empty space inside a container element can be automatically divided
+by its child elements 
+
+- Flexbox makes it easy to automatically align items to one another inside a parent container, both horizontally
+and vertically
+
+- Flexbox solves common problems such as vertical centering and creating equal-height columns
+
+- Flexbox is perfect for replacing floats, allowing us to write fewer and cleaner HTML and CSS code
+
+------------------------------------------------------------------------------------------------------
+FLEXBOX TERMINOLOGY:
+
+- The element in which we want to use Flexbox is called the Flex Container
+
+- All we have to do in order to create a flex container is to set its display property to flex(display:flex)
+
+- If we do this, then all the direct children of that flex container will ebcome the so called flex items
+
+- We will use different properties on the flex container and on the flex items
+
+- The direction in which these flex items are laid out is called the main axis(horizontal)
+
+- cross axis(vertical)
+
+FLEX CONTAINER:
+
+1) gap: 0 | <length>
+
+- To create space between items, without , usign margin
+
+
+2) justify-content: flex-start | flex-end | center | space-between| space-around | space-evenly
+
+- To align items along main axis(horizontally, by default)
+
+
+3) align-items: stretch | flex-start | flex-end | center | baseline
+
+- To align items along cross axis (vertically by default)
+
+
+4) flex-direction: row | row-reverse | column | column-reverse
+
+- To define which is the main axis
+
+
+5) flex-wrap: nowrap | wrap | wrap-reverse
+
+- To allow items to wrap into a new line if they are too large
+
+
+6) align-content: stretch | flex-start | flex-end | center | space-between | space-around
+
+- Only applies when there are multiple lines (flex-wrap: wrap)
+
+
+
 
 
 
