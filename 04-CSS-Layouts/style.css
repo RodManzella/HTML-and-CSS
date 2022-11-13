@@ -407,4 +407,12 @@ margin-bottom: 15px;
   /*queremos colocar o article e o aside lado a lado utilizando o flexbox, então criamos uma div
   com a classe row que engloba os dois containeres*/
   display: flex;
+  gap: 75px;
+}
+
+article{
+  flex: 1;
+}
+aside{
+  flex: 0 0 300px;
 }
