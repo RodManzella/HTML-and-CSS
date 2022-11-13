@@ -66,7 +66,21 @@ on top of that, and that is exactly what created this situation that we found ou
 our page. The sidebar grew too big because of the padding  and so it no longer fit close to the
 article
 
-- Woudn´t it be nice if
+- Woudn´t it be nice ifwe simply defined a certain height or a certain width and then the element would
+simply be exactly that size no matter what border or padding
+
+- We can do that by adding a little property to the element(box-sizing: border-box)
+
+
+box-sizing: border-box: Now the specified width and height goes all the way from one side of the border to the
+oposite side of the border, including the content area and the padding
+
+Final element width: width
+
+Final element height: height
+
+- What this also means is that padding and borders that we specify will now reduce the inner width of the
+content area
 
 
 
