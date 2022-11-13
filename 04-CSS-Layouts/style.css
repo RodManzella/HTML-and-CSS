@@ -276,33 +276,33 @@ nav p {
   font-size: 18px;
 } */
 
-/*FLOATS*/
+/* FLOATS
 
 .author-img{
-  /*This image os going to be taken out of the document flow just like an
+  This image os going to be taken out of the document flow just like an
   absolutely positioned element. Now the difference here with floats
-  is that all the other elements will basically float around it*/
+  is that all the other elements will basically float around it
   float: left;
    margin-bottom: 20px;
-   /*A floated element is able to create margins around it*/           
+   floated element is able to create margins around it          
 }
 
 .author{ 
-  /*Na descrição do autor, devemos colocar padding o suficiente para que ela saia de trás
+  Na descrição do autor, devemos colocar padding o suficiente para que ela saia de trás
   da imagem. Somente comprovando o fato que a imagem está fora do fluxo normal.Porém
-  se colocarmos a descrição em float, ela será posta logo quando a imagem acabar*/
-   /*padding-left: 80px;    */
+  se colocarmos a descrição em float, ela será posta logo quando a imagem acabar*
+   padding-left: 80px;    
    margin-top: 10px;
    float: left;
    margin-left: 20px;                        
 
 }
 
-/*O container header que tem (h1 e nav) terá sua altura colapsada ao flutuarmos seus dois child-elements.
-Pois é como se não estivessem mais na página(fix with clear)*/
-/*Só continua sendo visível por conta do padding*/
+O container header que tem (h1 e nav) terá sua altura colapsada ao flutuarmos seus dois child-elements.
+Pois é como se não estivessem mais na página(fix with clear)
+Só continua sendo visível por conta do padding
 
-/*Para limparmos o float, criar um elemento div com clear no container(BAD PRACTICE)*/ 
+Para limparmos o float, criar um elemento div com clear no container(BAD PRACTICE)
 
 
 h1{
@@ -317,17 +317,17 @@ nav{
   clear:both;
 }
 
-/*The clearfix hack is something that has been widely used by many years in the css community.
+The clearfix hack is something that has been widely used by many years in the css community.
 And the reason for that is exactly to avoid having these empty divs
 
-We add a clearfix class to the parent element with collapsed height*/
+We add a clearfix class to the parent element with collapsed height
 
 .clearfix::after{  
-  /*  - after creates a new element that is going to be the last child element of container
+    - after creates a new element that is going to be the last child element of container
       - It only appears if we define something with content property
       - By default, pseudo elements like after and before are inline elements.
         However, clearing floats like this only really works on a block level element, so
-        we set the display property to block*/
+        we set the display property to block
       clear: both;
       content: '';
       display: block;
@@ -338,8 +338,8 @@ article{
   width: 900px;
   float: left
 
-  /*We divided the width of both containers the sum be equal to the total width of the parent container
-  this way they can be side by side*/
+  We divided the width of both containers the sum be equal to the total width of the parent container
+  this way they can be side by side
   
 
 }
@@ -347,18 +347,18 @@ article{
 aside{
   width: 300px;
   float: right;
-  /*O footer vai acabar flutuando abaixo do aside, precisamos dar clear*/
+  O footer vai acabar flutuando abaixo do aside, precisamos dar clear
 }
 
 footer{
-  /*In this situation we don´t need to create any new empty div, or we don´t
+  In this situation we don´t need to create any new empty div, or we don´t
   need to use the clearfix class, because we already have that element
-  on which we want to clear the float, which is exactly the footer*/
+  on which we want to clear the float, which is exactly the footer
   clear: both;
 }
 
-/*Nessa situação em que os dois elementos filhos ocupam, juntos, o comprimento total do container pai
+Nessa situação em que os dois elementos filhos ocupam, juntos, o comprimento total do container pai
 não importa se usarmos float right ou float left, e a razão para isso é que não há espaço vazio entre eles.
 Mas criando espaço entre eles, diminuindo o comprimento do elemento article criará um espaço entre eles, já
 que um está flutuando para esquerda e o outro está flutuando para a direita. Caso eu coloque os dois 
-flutuando para esquerda o aside vai colar no article. */
+flutuando para esquerda o aside vai colar no article.  */
