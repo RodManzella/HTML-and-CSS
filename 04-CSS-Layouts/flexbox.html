@@ -46,7 +46,7 @@
 
         align-items: center;  /*Vertical*/
         justify-content: flex-start; /*Horizontal*/
-        /* gap: 30px; Separating flex elements */
+        gap: 10px; /*Separating flex elements */
       }
       .el{
         /*
@@ -59,8 +59,8 @@
           do not use the width property, but instead we use flex-basis*/
 
           /* flex-basis: 200px; */
-          flex-shrink: 0;  /*Determines whether flexbox is allowed to shrink elements if necessary or not*/
-          flex-grow: 1; /*Determines whether elements are allowed to grow as large as they can or not*/
+          /* flex-shrink: 0;  Determines whether flexbox is allowed to shrink elements if necessary or not
+          flex-grow: 1; Determines whether elements are allowed to grow as large as they can or not */
 
           /*Se todos elementos tiverem o mesmo número de flex-grow, então o espaço restante será dividido iguamente
           para eles ocuparem o maior comprimento possível*/
@@ -68,6 +68,9 @@
           /*Se quase todos os elementos tiverem flex-grow de mesmo valor e apenas um tiver um valor maior diferente
           então o elemento que tiver esse valor maior vai receber, proporcionalmente, mais espaço restante do que
           o restante*/
+
+          /*O que fazemos é geralmente setar flex-grow para 1  em todos os flex items, para termos todos elementos
+          expandindo para ocupar o espaço vazio*/
 
           /*Flex basis is not rigid, it´s like a recommendation that we make to the browser, but the browser
           will then figure out the optimal length*/
@@ -80,6 +83,10 @@
 
            /*However, if we want to change that, which sometimes we might want, then we can simply set
            flex-shrink to 0 and now you see that the elements are indeed 200 pixels wide*/
+
+           /* flex: 0 0 200px; */
+           /*grow - shrink - basis*/
+           flex: 1; /*grow: 1*/
       }
 
       .el--1{
