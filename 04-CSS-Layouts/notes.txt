@@ -80,7 +80,10 @@ Final element width: width
 Final element height: height
 
 - What this also means is that padding and borders that we specify will now reduce the inner width of the
-content area
+content area(the content area adapts to be the final size we defined initially)
+
+- Esse comportamento da border-box é bem mais intuitivo e menos confuso, por isso, vamos aplicar ele sempre
+em todos elementos utilizando o seletor universal.
 
 
 
