@@ -46,10 +46,32 @@
 
         align-items: center;  /*Vertical*/
         justify-content: flex-start; /*Horizontal*/
-        gap: 30px; /*Separating flex elements*/
+        /* gap: 30px; Separating flex elements */
       }
       .el{
-        /* margin-right: 30px; (not the best way)*/
+        /*
+        Defaults:
+          flex-grow: 0;
+          flex-shrink: 1;
+          flex-basis: auto; */
+        
+          /*When we want to size flex items and in particular with, then we usually
+          do not use the width property, but instead we use flex-basis*/
+
+          flex-basis: 200px;
+          flex-shrink: 0;
+
+          /*Flex basis is not rigid, it´s like a recommendation that we make to the browser, but the browser
+          will then figure out the optimal length*/
+
+          /*When we set basis to 200px we can actually see that the width of the elements are not 200px.
+          And the reason for that is that by default flexbox is allowed to shrink elements so that they
+          fit the container, and so that´s what the flex shrink set to 1 actually means. Again, if there
+          is not enough space in a container to fit the items with the size that we describe using flex-basis
+           then, flex-box is allowed to shrink these items by default, because flex shrink is set to 1*/
+
+           /*However, if we want to change that, which sometimes we might want, then we can simply set
+           flex-shrink to 0 and now you see that the elements are indeed 200 pixels wide*/
       }
 
       .el--1{
