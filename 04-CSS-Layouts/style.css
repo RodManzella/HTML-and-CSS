@@ -408,6 +408,7 @@ margin-bottom: 15px;
   com a classe row que engloba os dois containeres*/
   display: flex;
   gap: 75px;
+  align-items: flex-start;
   margin-bottom: 60px;
 }
 
