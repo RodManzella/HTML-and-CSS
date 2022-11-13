@@ -207,7 +207,6 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -362,3 +361,13 @@ não importa se usarmos float right ou float left, e a razão para isso é que n
 Mas criando espaço entre eles, diminuindo o comprimento do elemento article criará um espaço entre eles, já
 que um está flutuando para esquerda e o outro está flutuando para a direita. Caso eu coloque os dois 
 flutuando para esquerda o aside vai colar no article.  */
+
+/*FLEXBOX*/
+
+.main-header{
+  display: flex;
+  align-items: center; /*aligns vertically*/
+  justify-content: space-between;
+}
+
+
