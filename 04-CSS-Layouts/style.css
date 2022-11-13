@@ -384,6 +384,16 @@ margin-bottom: 15px;
 .related-post{
   display: flex;
   align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-link:link{
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block; /*To margin-bottom work*/
+
 }
 
 .related-author{
@@ -391,4 +401,10 @@ margin-bottom: 15px;
   font-size: 14px;
   font-weight: normal;
   font-style: italic;
+}
+
+.row{
+  /*queremos colocar o article e o aside lado a lado utilizando o flexbox, então criamos uma div
+  com a classe row que engloba os dois containeres*/
+  display: flex;
 }
