@@ -58,8 +58,9 @@
           /*When we want to size flex items and in particular with, then we usually
           do not use the width property, but instead we use flex-basis*/
 
-          flex-basis: 200px;
-          flex-shrink: 0;
+          /* flex-basis: 200px; */
+          flex-shrink: 0;  /*Determines whether flexbox is allowed to shrink elements if necessary or not*/
+          flex-grow: 1; /*Determines whether elements are allowed to grow as large as they can or not*/
 
           /*Flex basis is not rigid, it´s like a recommendation that we make to the browser, but the browser
           will then figure out the optimal length*/
@@ -98,7 +99,7 @@
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
+      <!-- <div class="el el--6">languages</div> -->
       <!-- <div class="el el--7">to</div>
       <div class="el el--8">learn</div> -->
     </div>
