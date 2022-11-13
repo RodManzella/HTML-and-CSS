@@ -45,7 +45,23 @@
         /*Vertically, by default, all flex items are as tall as the tallest element*/
 
         align-items: center;  /*Vertical*/
-        justify-content: space-between; /*Horizontal*/
+        justify-content: flex-start; /*Horizontal*/
+      }
+
+      .el--1{
+        align-self: flex-start;  /*select a specific flex element and change it´s vertical position*/
+      }
+
+      .el--5{
+        align-self: stretch;
+        order: 1; /*1 é maior que zero (vai pro fim)*/
+      }
+
+      .el--6{
+        /*by default all order are 0*/
+        /*If we want to movr one element to the first position, we simply need to give them a number
+        that is lower than zero*/
+        order: -1;
       }
     </style>
   </head>
