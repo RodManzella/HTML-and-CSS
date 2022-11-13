@@ -59,6 +59,7 @@ aside {
 
   /*Isso acontece devido ao comportamento padrão do box-model*/
   
+  box-sizing: border-box;
 }
 
 /* SMALLER ELEMENTS */
