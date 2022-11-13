@@ -62,6 +62,13 @@
           flex-shrink: 0;  /*Determines whether flexbox is allowed to shrink elements if necessary or not*/
           flex-grow: 1; /*Determines whether elements are allowed to grow as large as they can or not*/
 
+          /*Se todos elementos tiverem o mesmo número de flex-grow, então o espaço restante será dividido iguamente
+          para eles ocuparem o maior comprimento possível*/
+
+          /*Se quase todos os elementos tiverem flex-grow de mesmo valor e apenas um tiver um valor maior diferente
+          então o elemento que tiver esse valor maior vai receber, proporcionalmente, mais espaço restante do que
+          o restante*/
+
           /*Flex basis is not rigid, it´s like a recommendation that we make to the browser, but the browser
           will then figure out the optimal length*/
 
@@ -77,6 +84,8 @@
 
       .el--1{
         align-self: flex-start;  /*select a specific flex element and change it´s vertical position*/
+        /* order: 2;
+        flex-grow: 1; */
       }
 
       .el--5{
