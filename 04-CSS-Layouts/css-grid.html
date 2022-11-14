@@ -36,13 +36,30 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 32px;
         margin: 40px;
 
         /* CSS GRID */
+        /*Like flexbox, in CSS Grid we have grid containers and grid items*/
+
+        display: grid; /*Não muda nada, temos que definir as colunas e linhas*/
+        grid-template-columns: 200px 250px 150px 150px;
+
+        grid-template-rows: 300px 200px;
+
+        /*The only way of defining space between grid items is by the GAP property*/
+
+        /* gap: 30px; */
+
+        column-gap: 30px;
+        row-gap: 60px;
+
+        
+
       }
 
       .container--2 {
+        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
