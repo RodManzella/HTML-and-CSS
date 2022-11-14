@@ -41,12 +41,15 @@
 
         /* CSS GRID */
         /*Like flexbox, in CSS Grid we have grid containers and grid items*/
-
         display: grid; /*Não muda nada, temos que definir as colunas e linhas*/
-        /* grid-template-columns: 200px 200px 1fr 1fr; */
+        /* grid-template-columns: 200px 200px 1fr 1fr; 
+        fr divide o tamanho restante do container proporcionalmente pra cada coluna*/
+        /* grid-template-columns: 1fr 1fr 1fr auto;    auto: will take only the space necessary*/
 
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);  /*Make 3 columns of 1 fr size*/
         grid-template-rows: 300px 200px;
+        /*As we defined sizes of the first two rolls (they are explicit rows) the other row
+         was added automatically because we run out of space int he grid that we defined(implicit row)*/
 
         /*The only way of defining space between grid items is by the GAP property*/
 
