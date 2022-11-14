@@ -14,7 +14,7 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
+        /* height: 150px; */
       }
       .el--4 {
         background-color: goldenrod;
@@ -42,21 +42,22 @@
         /* CSS GRID */
         /*Like flexbox, in CSS Grid we have grid containers and grid items*/
         display: grid; /*Não muda nada, temos que definir as colunas e linhas*/
+        /* grid-template-rows: 300px 200px; */
         /* grid-template-columns: 200px 200px 1fr 1fr; 
         fr divide o tamanho restante do container proporcionalmente pra cada coluna*/
         /* grid-template-columns: 1fr 1fr 1fr auto;    auto: will take only the space necessary*/
 
-        grid-template-columns: repeat(3, 1fr);  /*Make 3 columns of 1 fr size*/
-        grid-template-rows: 300px 200px;
+        grid-template-columns: repeat(4, 1fr);  /*Make 4 columns of 1 fr size*/
         /*As we defined sizes of the first two rolls (they are explicit rows) the other row
          was added automatically because we run out of space int he grid that we defined(implicit row)*/
-
         /*The only way of defining space between grid items is by the GAP property*/
-
         /* gap: 30px; */
+        grid-template-rows: 1 fr 1 fr;
 
         column-gap: 30px;
         row-gap: 60px;
+
+        /*O que defina a altura de uma linha é o seu elemento mais alto, ou seja, essa será a medida de 1 fr*/
 
 
 
